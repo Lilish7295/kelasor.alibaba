@@ -2,13 +2,12 @@ from django.contrib.admin import ModelAdmin, register
 from .models import Terminal,Bus
 
 @register(Terminal)
-@register(Bus)
-
 class Terminaladmin(ModelAdmin):
     pass
-
-
+@register(Bus)
 class BusAdmin(ModelAdmin):
-    pass
+    list_display=['origin','destination']
+    search_fields=['origin']
+    list_filter=['origin']
 
 

@@ -13,6 +13,7 @@ class Terminal(models.Model):
 
 class Bus(models.Model):
     origin=models.ForeignKey(Terminal,on_delete=models.CASCADE)
+    destination=models.CharField(max_length=200)
     name=models.CharField(max_length=200)
     type=models.CharField(max_length=100)
     no=models.CharField(max_length=10)
