@@ -23,4 +23,5 @@ def list1(request):
             "city" : item.city,
             "number" : item.no
         }
+        airport_list.append(dictionary)
     return JsonResponse(airport_list,safe=False)

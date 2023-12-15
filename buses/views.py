@@ -10,7 +10,7 @@ def list(request):
             "no" : item.no,
             "city" : item.city
         }
-    terminals_list.append(dictionary)
+        terminals_list.append(dictionary)
     return JsonResponse(terminals_list,safe=False)
 
 def list2(request):
@@ -22,5 +22,5 @@ def list2(request):
             "destination" : item.destination,
             "name" : item.name
         }
-    buses_list.append(dictionary)
+        buses_list.append(dictionary)
     return JsonResponse(buses_list,safe=False)

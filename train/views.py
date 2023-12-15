@@ -11,7 +11,7 @@ def list(request):
             "no" : item.no.name,
             "city" : item.city
         }
-    stations_list.append(dictionary)
+        stations_list.append(dictionary)
     return JsonResponse(stations_list,safe=False)
 
 def list2(request):
@@ -23,5 +23,5 @@ def list2(request):
             "destination" : item.destination,
             "name" : item.name
         }
-    trains_list.append(dictionary)
+        trains_list.append(dictionary)
     return JsonResponse(trains_list,safe=False)
