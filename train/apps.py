@@ -1,7 +1,7 @@
 from django.apps import AppConfig
 
 
-class BusesConfig(AppConfig):
+class TrainConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'buses'
-    verbose_name="kelasor buses"
+    name = 'train'
+    verbose_name="kelasor train"

@@ -6,4 +6,3 @@ urlpatterns = [
 urlpatterns = [
     path('list1', list2 , name='list1')
 ]
-
